@@ -121,6 +121,46 @@
           }
         }
       }
+    },
+    "ng6-text-restrictions": {
+      "root": "projects/ng6-text-restrictions",
+      "sourceRoot": "projects/ng6-text-restrictions/src",
+      "projectType": "library",
+      "prefix": "alh",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng6-text-restrictions/tsconfig.lib.json",
+            "project": "projects/ng6-text-restrictions/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ng6-text-restrictions/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng6-text-restrictions/src/test.ts",
+            "tsConfig": "projects/ng6-text-restrictions/tsconfig.spec.json",
+            "karmaConfig": "projects/ng6-text-restrictions/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng6-text-restrictions/tsconfig.lib.json",
+              "projects/ng6-text-restrictions/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ng6-text-restriction"
