@@ -9,7 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build_lib": "ng build ng6-text-restrictions",
-    "npm_pack": "cd dist/ng6-text-restrictions && npm pack"
+    "npm_pack": "cd dist/ng6-text-restrictions && npm pack",
+    "package": "npm run build_lib && npm run npm_pack"
   },
   "private": true,
   "dependencies": {
