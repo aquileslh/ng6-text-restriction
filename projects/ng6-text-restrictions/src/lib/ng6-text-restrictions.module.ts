@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
-import { Ng6TextRestrictionsComponent } from './ng6-text-restrictions.component';
+import { AlphaMxDirective } from './alpha-mx/alpha-mx.directive';
 
 @NgModule({
   imports: [
   ],
-  declarations: [Ng6TextRestrictionsComponent],
-  exports: [Ng6TextRestrictionsComponent]
+  declarations: [
+    AlphaMxDirective
+  ],
+  exports: [
+    AlphaMxDirective
+  ]
 })
 export class Ng6TextRestrictionsModule { }
