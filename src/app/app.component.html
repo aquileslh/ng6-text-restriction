@@ -1,6 +1,18 @@
-<h2>Help for start:</h2>
+<h2>Help for start: {{title}}</h2>
 <ul>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://www.npmjs.com/package/ng6-text-restrictions">Npm package</a></h2>
+    <h3><a target="_blank" rel="noopener" href="https://www.npmjs.com/package/ng6-text-restrictions">Npm package</a></h3>
   </li>
 </ul>
+
+<form [formGroup]="validationForm">
+  <h3>Example input validation</h3>
+  <div>
+    <label for="name">Name</label>
+    <input type="text" formControlName="name" alhAlphaMx placeholder="with validation">
+  </div>
+  <div>
+    <label for="adress">Address</label>
+    <input type="text" formControlName="address" placeholder="without validation">
+  </div>
+</form>
