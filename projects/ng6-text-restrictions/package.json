@@ -7,7 +7,7 @@
     "email": "aquileslazaroh@gmail.com"
   },
   "description": "This is a project for restrict the use of caracteres in forms inputs.",
-  "keywords" :["Angular","angular6","input","restriction"],
+  "keywords" :["Angular","Angular6","input","restriction","ng6","form","Validation","RegExp"],
   "repository": {
     "type" : "git",
     "url" : "https://github.com/aquileslh/ng6-text-restriction"
