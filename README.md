@@ -1,7 +1,7 @@
 # Ng6TextRestriction
 
-[![](https://img.shields.io/badge/release-v1.0.1-blue.svg)](https://github.com/angular/angular-cli)
-[![](https://img.shields.io/github/license/aquileslh/ng6-text-restriction.svg?style=social)](/LICENCE)
+[![](https://img.shields.io/badge/release-v1.0.1-blue.svg)](https://github.com/aquileslh/ng6-text-restriction)
+[![](https://img.shields.io/github/license/aquileslh/ng6-text-restriction.svg?style=social)](https://github.com/aquileslh/ng6-text-restriction/blob/master/LICENSE)
 
 ## Overview
 Directives aviables and description
