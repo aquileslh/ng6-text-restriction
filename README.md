@@ -58,7 +58,7 @@ export class AppModule { }
 
 ## Using Ng6TextRestrictions
 
-For use within the form
+Use inside the form
 
 ```html
   <form [formGroup]="validationForm">
