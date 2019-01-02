@@ -1,7 +1,7 @@
 {
   "name": "ng6-text-restrictions",
-  "version": "1.0.0",
-  "license" : "SEE LICENSE IN LICENSE",
+  "version": "1.0.1",
+  "license" : "MIT",
   "author": {
     "name": "Aquiles Lázaro",
     "email": "aquileslazaroh@gmail.com"
@@ -12,6 +12,7 @@
     "type" : "git",
     "url" : "https://github.com/aquileslh/ng6-text-restriction"
   },
+  "private": false,
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
