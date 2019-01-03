@@ -13,6 +13,11 @@ export class AlphaMxDirective {
     private ngControl: NgControl
   ) { }
 
+  /**
+   * Maneja evento de cambio en el input y se ejecuta la funcion onInputChange.
+   * @param {*} event Valor de input
+   * @memberof AlphaMxDirective
+   */
   @HostListener('ngModelChange', ['$event'])
   onModelChange(event) {
     this.onInputChange(event, false);

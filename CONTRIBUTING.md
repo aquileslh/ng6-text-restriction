@@ -67,3 +67,14 @@ Create ...tgz for install with NPM and use in your own project
 ```shell
 npm install ng6-text-restrictions-1.0.1.tgz
 ```
+
+## Documentation Styleguide
+
+```javascript
+ /**
+   * Maneja evento de cambio en el input y se ejecuta la funcion onInputChange.
+   * @param {*} event Valor de input
+   * @memberof AlphaMxDirective
+   */
+    @HostListener('ngModelChange', ['$event'])...
+```
