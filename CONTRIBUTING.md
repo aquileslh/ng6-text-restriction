@@ -23,7 +23,6 @@ npm install
 
 Create a new branch `feature/mi-validation`
 
-
 For a new function, you will have to create a directive, which is the logic of validation.
 Use the Angular-CLI
 
@@ -33,7 +32,7 @@ ng generate directive mi-directive/mi-directive --project=ng6-text-restrictions
 
 Use two decorator @HostListener and @HostBinding for handle events.
 
-Declare and import the directive in main module.
+Declare and import the directive exportin main module `projects/ng6-text-restrictions/src/lib/ng6-tect-restrictions.module`.
 
 ```javascript
 ...
@@ -43,11 +42,11 @@ Declare and import the directive in main module.
     imports: [
         ],
   declarations: [
-      AlphaMxDirective,
+    AlphaMxDirective,
     MiDirective
   ],
   exports: [
-      AlphaMxDirective,
+    AlphaMxDirective,
     MiDirective
   ]
 })
@@ -55,14 +54,35 @@ Declare and import the directive in main module.
 ....
 ```
 
+Add export in `public_api_ts`
+
+```javascript
+...
+export * from './lib/alpha-mx/alpha-mx.directive';
+export * from './lib/digit/mi-directive.directive'; // export new directive
+
+export * from './lib/ng6-text-restrictions.module';
+....
+```
+
 Send pull requests for review.
 
-For test in local can use directive en module src or execute
+For test in local can use directive en module `src/` 
+
+First create the new package with changes this is create in `dis/ng6-text-restrictions`
+
+```shell
+npm run build_lib
+```
+
+In the module `src/app.module.ts` import the module `Ng6TextRestrictionsModule`
+
+.... or execute
 
 ```shell
 npm run package
 ```
-Create ...tgz for install with NPM and use in your own project
+This create ...tgz for install with NPM and use in your own project
 
 ```shell
 npm install ng6-text-restrictions-1.0.1.tgz
