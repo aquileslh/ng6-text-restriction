@@ -5,7 +5,8 @@
 
 ## Overview
 Directives aviables and description
-* alhAlphaMx -> Validate insert of characters with RegExp '^([A-Za-záéíóúñüÁÉÍÓÚÑÜ ])+$'
+* alhAlphaMx -> Validate insertion of characters with RegExp '^([A-Za-záéíóúñüÁÉÍÓÚÑÜ ])+$'
+* alhDigit   -> Validate insertion of only digits. RegExp '^[0-9]*$'
 
 ## Installation
 

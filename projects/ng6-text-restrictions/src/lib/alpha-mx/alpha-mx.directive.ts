@@ -24,7 +24,6 @@ export class AlphaMxDirective {
   @HostListener('ngModelChange', ['$event'])
   onModelChange(event) {
     this.onInputChange(event, false);
-    console.log(event);
   }
 
   /**
