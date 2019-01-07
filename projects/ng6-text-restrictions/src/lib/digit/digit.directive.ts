@@ -7,9 +7,13 @@ import { NgControl } from '@angular/forms';
 export class DigitDirective {
 
   /** Expreción regular que se evalua */
-  public DIGIT = '^[0-9]+$';
+  public DIGIT = '^[0-9]*$';
+
   /**  Nuevo objeto RegExp */
   regExp = new RegExp(this.DIGIT);
+
+  /** Valor ingresado en el input */
+  valorActual: number;
 
   constructor(
     private ngControl: NgControl
@@ -22,8 +26,11 @@ export class DigitDirective {
    */
   @HostListener('ngModelChange', ['$event'])
   onModelChange(event) {
-    this.onInputChange(event, false);
-    console.log(event);
+    if (event !== null) {
+      this.onInputChange(event, false);
+    } else {
+        this.ngControl.valueAccessor.writeValue(this.valorActual);
+    }
   }
 
   /**
@@ -51,9 +58,10 @@ export class DigitDirective {
       this.ngControl.valueAccessor.writeValue(newVal);
     } else {
       if ((this.regExp.test(event))) {
-        this.ngControl.valueAccessor.writeValue(event);
+        this.valorActual = event;
+        this.ngControl.valueAccessor.writeValue(this.valorActual);
       } else {
-        newVal = event.replace(/['^[0-9]+$']/g, '');
+        newVal = event.replace(/[^0-9]/g, '');
         this.ngControl.valueAccessor.writeValue(newVal);
       }
     }

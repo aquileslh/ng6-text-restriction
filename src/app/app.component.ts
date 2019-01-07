@@ -12,5 +12,6 @@ export class AppComponent {
   validationForm = new FormGroup({
     name : new FormControl(''),
     address : new FormControl(''),
+    cp : new FormControl(''),
   });
 }
