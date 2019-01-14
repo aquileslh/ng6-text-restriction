@@ -10,7 +10,7 @@ Directives aviables and description
 
 ## Installation
 
-### To install
+### Run the example application locally
 
 ```shell
 git clone https://github.com/aquileslh/ng6-text-restriction.git ng6-text-restriction
